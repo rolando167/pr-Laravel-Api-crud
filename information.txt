@@ -15,6 +15,7 @@ Ruta:
 http://localhost:8000/api/v3/articulos
 
 ----------------------------------
+<<<<<<< HEAD
 Autenticacion con JWT:
 
 https://jwt-auth.readthedocs.io/en/develop/
@@ -37,6 +38,9 @@ seguir con la documenation de la web pero luego de las rutas crear el controlado
 
 >php artisan make:midleware JwtMiddleware
 
+=======
+https://laraveldaily.com/how-to-structure-routes-in-large-laravel-projects/
+>>>>>>> c84cb0b0389e002c25657a1abd0b2e64a45836de
 ----------------------------------
 Otra Opcion con la libreria: Oauth2
 
