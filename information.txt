@@ -15,7 +15,7 @@ Ruta:
 http://localhost:8000/api/v3/articulos
 
 ----------------------------------
-
+https://laraveldaily.com/how-to-structure-routes-in-large-laravel-projects/
 ----------------------------------
 
 ----------------------------------
