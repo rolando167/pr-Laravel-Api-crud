@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 Use App\Article;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,4 +56,20 @@ Route::get('articles2', function() {
 	// If the Content-Type and Accept headers are set to 'application/json',
 	// this will return a JSON structure. This will be cleaned up later.
 	return Article::all();
+});
+
+//  -----------  RUTAAA JWT 💻
+Route::group([
+
+    // 'middleware' => 'api',
+    'prefix' => 'auth'
+
+], function () {
+
+    Route::post('register', [AuthController::class, 'register']);  // localhost:8000/api/auth/register
+    Route::post('login', [AuthController::class, 'login']); // localhost:8000/api/auth/login
+    Route::post('logout', [AuthController::class, 'logout']); // localhost:8000/api/auth/logout
+    // Route::post('refresh', 'AuthController@refresh');
+    Route::post('me', [AuthController::class, 'me']);
+
 });

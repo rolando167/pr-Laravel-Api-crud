@@ -15,8 +15,33 @@ Ruta:
 http://localhost:8000/api/v3/articulos
 
 ----------------------------------
+Autenticacion con JWT:
+
+https://jwt-auth.readthedocs.io/en/develop/
+
+YT:  https://www.youtube.com/watch?v=fahIh0QWcCI&t=104s
+
+
+
+1. > composer require tymon/jwt-auth
+2. > php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+3. > php artisan jwt:secret
+
+-------------------------
+agregar al modelo User: ...  implements JWTSubject
+..
+
+seguir con la documenation de la web pero luego de las rutas crear el controlador y el middleware.
+
+>php artisan make:controller AuthController
+
+>php artisan make:midleware JwtMiddleware
 
 ----------------------------------
+Otra Opcion con la libreria: Oauth2
+
+https://www.netireki.eus/crear-rest-api-con-laravel-step-2/
+
 
 ----------------------------------
 
