@@ -10,6 +10,9 @@ https://tecadmin.net/check-laravel-version/
 
 
 ----------------------------------
+Ruta:
+
+http://localhost:8000/api/v3/articulos
 
 ----------------------------------
 
