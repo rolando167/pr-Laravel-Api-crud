@@ -1,0 +1,21 @@
+laravel ApiRest - Crud Mysql Articles y Rutas estructuradas
+
+17/09/2021
+
+----------------------------------
+https://tecadmin.net/check-laravel-version/
+:: Saber version del proyecto actual
+> php artisan --version
+
+
+
+----------------------------------
+
+----------------------------------
+
+----------------------------------
+
+----------------------------------
+
+
+----------------------------------
