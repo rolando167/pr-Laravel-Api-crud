@@ -44,6 +44,7 @@ class AuthController extends Controller
      */
     public function me()
     {
+        error_log(\Request::getRequestUri().' -> ' .auth()->user()->id);
         return response()->json(auth()->user());
     }
 

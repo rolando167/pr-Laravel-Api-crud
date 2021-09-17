@@ -49,5 +49,7 @@ https://www.netireki.eus/crear-rest-api-con-laravel-step-2/
 
 ----------------------------------
 
+https://stackoverflow.com/questions/42324438/how-to-print-messages-on-console-in-laravel/42324505
 
+https://stackoverflow.com/questions/31555494/laravel-request-getting-current-path-with-query-string
 ----------------------------------

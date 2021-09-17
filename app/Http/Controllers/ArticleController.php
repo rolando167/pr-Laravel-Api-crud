@@ -9,6 +9,7 @@ class ArticleController extends Controller
 {
 	public function index()
 	{
+		error_log(\Request::getRequestUri());
 		return Article::all();
 	}
 
