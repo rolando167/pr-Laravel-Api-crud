@@ -57,6 +57,7 @@ Otros guia Crud:
 
 https://programacionymas.com/blog/api-rest-laravel-passport
 https://teachyourselfcoding.com/articles/learn-jwt-authentication-step-by-step-with-node-js-with-vanilla-javascript-client/
+https://www.bezkoder.com/react-jwt-auth/
 ----------------------------------
 
 ----------------------------------
