@@ -63,4 +63,5 @@ https://www.bezkoder.com/react-jwt-auth/
 Javascript Tips & Tricks You Should Know in 2021
 
 https://medium.com/codex/javascript-tips-tricks-you-should-know-in-2021-30269dc7c34d
+https://www.bezkoder.com/react-hooks-redux-crud/
 ----------------------------------
