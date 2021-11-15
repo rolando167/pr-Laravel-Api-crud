@@ -1,6 +1,9 @@
 laravel ApiRest - Crud Mysql Articles y Rutas estructuradas
-
 17/09/2021
+
+----------
+Laravel con Api Rest con MySQL, rutas y GRUpos de Rutas 2021, comprobado todo con POSTMAN y JWT Full Login, register, logout 
+ 
 
 ----------------------------------
 https://tecadmin.net/check-laravel-version/
