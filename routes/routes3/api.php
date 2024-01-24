@@ -1,0 +1,66 @@
+<?php
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| API Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return $request->user();
+});
+
+
+Route::get('/', function(){
+    return view('welcome');
+	// return response()->json('--- Bienvenido  👍 ---', 200);
+});
+
+// ================================================
+// **************** MODULOS INTERNOS ****************
+// ================================================
+
+Route::prefix('auth')
+	->group(base_path('routes/subrutas/Auth/authRoute.php'));
+
+Route::prefix('usuarios')
+	->group(base_path('routes/subrutas/Auth/usuario.php'));
+
+
+Route::prefix('roles')
+	->group(base_path('routes/subrutas/Interno/roles.php'));
+
+Route::prefix('permisos')
+	->group(base_path('routes/subrutas/Interno/permisosSoftware.php'));
+
+
+Route::prefix('grupoServiciosSoftware')
+	->group(base_path('routes/subrutas/Interno/grupoServicio.php'));
+
+Route::prefix('facturacionSoftware')
+	->group(base_path('routes/subrutas/Interno/facturacionSoftware.php'));
+
+Route::prefix('personas')
+	->group(base_path('routes/subrutas/Interno/personas.php'));
+
+Route::prefix('items')
+	->group(base_path('routes/subrutas/Interno/items.php'));
+
+Route::prefix('modulos')
+	->group(base_path('routes/subrutas/Interno/modulos.php'));
+
+Route::prefix('ubigeos')
+	->group(base_path('routes/subrutas/Interno/ubigeo.php'));
+
+Route::prefix('empresa')
+	->group(base_path('routes/subrutas/Interno/empresa.php'));
+
+// ================================================
+// **************** MODULOS EXTERNOS ****************
+// ================================================
+Route::prefix('clientesAdministrador')
+	->group(base_path('routes/subrutas/Externo/clientesAdministrador.php'));
+
